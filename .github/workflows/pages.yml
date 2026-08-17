@@ -25,12 +25,29 @@ jobs:
           bundler-cache: true
       # Each semester directory is a self-contained Jekyll site, built under
       # its own baseurl. Add a build line here when creating a new semester.
+      # remote_theme fetches the theme through the GitHub API, which is rate
+      # limited for anonymous requests, so the build needs a token.
       - name: Build 2026.1
         run: bundle exec jekyll build -s 2026.1 -d _site/2026.1 -b /ilc/2026.1
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ github.token }}
+          PAGES_REPO_NWO: ${{ github.repository }}
       - name: Build 2026.2
         run: bundle exec jekyll build -s 2026.2 -d _site/2026.2 -b /ilc/2026.2
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ github.token }}
+          PAGES_REPO_NWO: ${{ github.repository }}
       - name: Add landing page
         run: cp index.html _site/
+      # Guard against a silent regression to GitHub's default theme: if the
+      # remote theme ever fails to apply, fail the build instead of deploying
+      # an unstyled site.
+      - name: Check theme was applied
+        run: |
+          for site in 2026.1 2026.2; do
+            grep -q 'just-the-docs' "_site/$site/index.html" \
+              || { echo "::error::$site built without the just-the-docs theme"; exit 1; }
+          done
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
