@@ -17,8 +17,8 @@ title: Introdução à Lógica Computacional
 tagline: Introdução à Lógica Computacional
 description: Course given by DCC-UFMG
 author: Haniel Barbosa
-baseurl: '/'
-url: 'https://hanielb.github.io'
+baseurl: '/ilc/2026.1'
+url: 'https://ufmg-smite.github.io'
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
 # Theme settings

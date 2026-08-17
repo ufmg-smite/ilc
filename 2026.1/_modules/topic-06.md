@@ -2,6 +2,9 @@
 title: Tópico 06 - Álgebra Booleana e Circuitos Lógicos
 ---
 
+## {{ page.title }}
+{: .text-gamma }
+
 20, 25 Mai
 : [**Álgebra Booleana**]({{ site.baseurl }}{% link _lessons/06-booleans/booleans.md %})
   : [Slides]({{ site.baseurl }}{% link _lessons/06-booleans/boolean-algebra.pdf %})
