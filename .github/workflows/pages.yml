@@ -24,16 +24,26 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
       # Each semester directory is a self-contained Jekyll site, built under
-      # its own baseurl. Add a build line here when creating a new semester.
-      # remote_theme fetches the theme through the GitHub API, which is rate
-      # limited for anonymous requests, so the build needs a token.
-      - name: Build 2026.1
-        run: bundle exec jekyll build -s 2026.1 -d _site/2026.1 -b /ilc/2026.1
-        env:
-          JEKYLL_GITHUB_TOKEN: ${{ github.token }}
-          PAGES_REPO_NWO: ${{ github.repository }}
-      - name: Build 2026.2
-        run: bundle exec jekyll build -s 2026.2 -d _site/2026.2 -b /ilc/2026.2
+      # its own baseurl. Add a build call here when creating a new semester.
+      #
+      # remote_theme downloads the theme zip from codeload.github.com with no
+      # authentication (jekyll-remote-theme sends only a User-Agent), so it can
+      # hit a transient 429 that no token can prevent -- hence the retry.
+      # JEKYLL_GITHUB_TOKEN is unrelated to that: it is what jekyll-github-metadata
+      # uses to avoid anonymous GitHub API limits.
+      - name: Build sites
+        run: |
+          build() {
+            for attempt in 1 2 3; do
+              bundle exec jekyll build -s "$1" -d "_site/$1" -b "/ilc/$1" && return 0
+              echo "::warning::build of $1 failed (attempt $attempt of 3), retrying"
+              sleep 30
+            done
+            echo "::error::build of $1 failed after 3 attempts"
+            return 1
+          }
+          build 2026.1
+          build 2026.2
         env:
           JEKYLL_GITHUB_TOKEN: ${{ github.token }}
           PAGES_REPO_NWO: ${{ github.repository }}
