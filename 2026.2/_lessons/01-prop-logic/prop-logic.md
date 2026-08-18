@@ -31,7 +31,7 @@ Para instalar o `cvc5` e usar sua API em Python, basta instalar o cvc5 com, por 
 pip install cvc5
 ```
 
-Mais instruções sobre instalação estão disponíveis [aqui](https://cvc5.github.io/docs/cvc5-1.0.7/api/python/python.html). E a documentação das operações disponíveis na API estão [aqui](https://cvc5.github.io/docs/cvc5-1.0.7/api/python/pythonic/pythonic.html).
+Mais instruções sobre instalação estão disponíveis [aqui](https://cvc5.github.io/docs/cvc5-1.3.4/api/python/python.html). E a documentação das operações disponíveis na API estão [aqui](https://cvc5.github.io/docs/cvc5-1.3.4/api/python/pythonic/pythonic.html).
 
 ### Determinando a satisfatibilidade de uma fórmula proposicional
 
