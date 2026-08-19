@@ -1,0 +1,18 @@
+# Executáveis gerados
+sat
+equivalencia
+n-rainhas
+*.o
+
+# cvc5 baixado para este diretório
+cvc5-*/
+cvc5-*.zip
+cvc5-*.tar.gz
+include/
+lib/
+
+# ambiente virtual de Python
+pyenv/
+venv/
+.venv/
+__pycache__/

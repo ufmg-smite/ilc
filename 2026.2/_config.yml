@@ -30,6 +30,10 @@ exclude:
   - "_lessons/*/cvc5-c/sat"
   - "_lessons/*/cvc5-c/equivalencia"
   - "_lessons/*/cvc5-c/n-rainhas"
+  - "_lessons/*/cvc5-c/pyenv*"
+  - "_lessons/*/cvc5-c/venv*"
+  - "_lessons/*/cvc5-c/.venv*"
+  - "_lessons/*/cvc5-c/__pycache__*"
 
 # Theme settings
 remote_theme: pmarsceill/just-the-docs
