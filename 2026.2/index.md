@@ -22,7 +22,7 @@ seo:
 - [Plano de ensino](plan.pdf)
 - Instructor:
   - [Haniel Barbosa](https://hanielbarbosa.com/), Office 4323, DCC, hbarbosa@dcc.ufmg.br
-  - [Ernesto Soldevila](https://mallku2.github.io/), mallkuernesto@gmail.com
+  - [David Perera](https://daperera.github.io//), perera.dap@gmail.com
 
 ---
 

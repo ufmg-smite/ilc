@@ -19,7 +19,17 @@ description: Course given by DCC-UFMG
 author: Haniel Barbosa
 baseurl: '/ilc/2026.2'
 url: 'https://ufmg-smite.github.io'
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  # cvc5 baixado localmente e executaveis compilados a partir dos exemplos em C
+  # (arquivos de trabalho, nao devem ir para o site)
+  - "_lessons/*/cvc5-c/cvc5-*"
+  - "_lessons/*/cvc5-c/sat"
+  - "_lessons/*/cvc5-c/equivalencia"
+  - "_lessons/*/cvc5-c/n-rainhas"
 
 # Theme settings
 remote_theme: pmarsceill/just-the-docs
