@@ -10,9 +10,9 @@ description: Atividades avaliativas
 
 |                    | Valor | Quando | Onde       |
 |--------------------|-------|--------|------------|
-| Prova 1            | 30    | 19/09  | 09:00, TBD |
-| Prova 2            | 30    | 24/10  | 09:00, TBD |
-| Prova 3            | 30    | 21/11  | 09:00, TBD |
+| Prova 1            | 30    | 19/09  | 09:00, CAD3 - Auditório B306 |
+| Prova 2            | 30    | 24/10  | 09:00, CAD3 - Auditório B306 |
+| Prova 3            | 30    | 21/11  | 09:00, CAD3 - Auditório B306 |
 | Exercícios em sala | 10    |        |            |
 |--------------------|-------|--------|------------|
 | Substitutuva       | 30    | 25/11  |
