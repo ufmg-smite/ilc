@@ -7,7 +7,7 @@ title: Tópico 03 - Demonstrações
 
 02, 09 Set
 : [**Demonstrações e regras de inferência**]({{ site.baseurl }}{% link _lessons/03-proofs/proofs.md %})
-  : [Slides]({{ site.baseurl }}{% link _lessons/03-proofs/05-proofs-alt.pdf %})
+  : [Slides]({{ site.baseurl }}{% link _lessons/03-proofs/05-proofs.pdf %})
 
 14 Set
 : [**Regras de inferência: Lógica de Predicados**]({{ site.baseurl }}{% link _lessons/03-proofs/proofs.md %})
