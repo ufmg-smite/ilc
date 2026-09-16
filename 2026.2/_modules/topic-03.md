@@ -10,7 +10,8 @@ title: Tópico 03 - Demonstrações
   : [Slides]({{ site.baseurl }}{% link _lessons/03-proofs/05-proofs.pdf %})
 
 16 Set
-: Revisão
-
+: **Revisão**
+  : [Slides]({{ site.baseurl }}{% link _lessons/03-proofs/06-revisions.pdf %})
+  
 19 Set
 : Prova 1
