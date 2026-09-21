@@ -12,14 +12,10 @@ title: Tópico 03 - Demonstrações
 16 Set
 : **Revisão**
   : [Slides]({{ site.baseurl }}{% link _lessons/03-proofs/06-revisions.pdf %})
-  
+
 19 Set
 : Prova 1
 
 21, 23 Set
 : [**Métodos de demonstração**]({{ site.baseurl }}{% link _lessons/03-proofs/proofs.md %})
   : [Slides]({{ site.baseurl }}{% link _lessons/03-proofs/06-proofs.pdf %})
-
-28 Set
-: [**Resolução via SMT e ITPs**]({{ site.baseurl }}{% link _lessons/03-proofs/proofs.md %})
-  : [Slides]({{ site.baseurl }}{% link _lessons/03-proofs/07-ar.pdf %})
