@@ -12,6 +12,15 @@ title: Demonstrações
 - Do livro texto:
   - Regras de inferência: capítulo 1.5
 
+- [Notas de aula sobre métodos de demonstração]({{ site.baseurl }}{% link _lessons/03-proofs/06-proofs.pdf %}).
+- Do livro texto:
+  - Introdução demonstrações: capítulo 1.6
+  - Métodos de demonstração: capítulo 1.7
+
+- Estratégias de demonstrações em jogos:
+  - [Jogo Chomp]({{ site.baseurl }}{% link _lessons/03-proofs/06-proofs-appx_chomp.pdf %})
+  - [Xadrez e dominó]({{ site.baseurl }}{% link _lessons/03-proofs/06-proofs-appx_checkers.pdf %})
+
 ## Automatizando busca de demonstrações
 
 O solucionador SMT cvc5 pode ser usado para demonstrações utilizando a dualidade entre *validade* (isto é, uma fórmula ser *sempre* verdadeira, ou seja uma *tautologia*) entre e *satisfatibilidade* (isto é, uma fórmula *poder* ser verdadeira). Uma fórmula `φ` é uma *tautologia* se e somente se `¬φ` é *insatisfatível*.
