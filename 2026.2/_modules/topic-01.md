@@ -21,4 +21,4 @@ title: Tópico 01 - Lógica proposicional
   : [Slides]({{ site.baseurl }}{% link _lessons/01-prop-logic/03-prop-logic-sat.pdf %})
 
 19 Ago
-: [**Resolução via SAT**]({{ site.baseurl }}{% link _lessons/01-prop-logic/prop-logic.md %})
+: [**Resolução via SAT**]({{ site.baseurl }}{% link _lessons/04-ar/ar.md %})
