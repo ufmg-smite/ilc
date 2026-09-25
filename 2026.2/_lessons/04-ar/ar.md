@@ -9,6 +9,33 @@ title: Automação de Raciocínio
 - TOC
 {:toc}
 
+## Leituras
+
+- [Notas de aula sobre resolução de problemas via SMT e ITPs]({{ site.baseurl }}{% link _lessons/04-ar/smt-itps.pdf %}).
+- Código da aula: [repositório ILC-lab](https://github.com/psaccomani15/ILC-lab)
+  - [`cvc5/`](https://github.com/psaccomani15/ILC-lab/tree/main/cvc5): exemplos em C, compilados com o
+    [`Makefile`](https://github.com/psaccomani15/ILC-lab/blob/main/cvc5/Makefile):
+    - [`hello.c`](https://github.com/psaccomani15/ILC-lab/blob/main/cvc5/hello.c): primeiro contato com a API;
+    - [`predicados.c`](https://github.com/psaccomani15/ILC-lab/blob/main/cvc5/predicados.c): codificações equivalentes em predicados;
+    - [`nqueens_bool.c`](https://github.com/psaccomani15/ILC-lab/blob/main/cvc5/nqueens_bool.c) e [`nqueens_int.c`](https://github.com/psaccomani15/ILC-lab/blob/main/cvc5/nqueens_int.c):
+      n-rainhas com variáveis booleanas e com inteiros;
+    - [`sudoku_bool.c`](https://github.com/psaccomani15/ILC-lab/blob/main/cvc5/sudoku_bool.c) e [`sudoku_int.c`](https://github.com/psaccomani15/ILC-lab/blob/main/cvc5/sudoku_int.c):
+      Sudoku com variáveis booleanas e com inteiros;
+    - [`send_more_money.c`](https://github.com/psaccomani15/ILC-lab/blob/main/cvc5/send_more_money.c): o exercício SEND + MORE = MONEY.
+  - [`lean/`](https://github.com/psaccomani15/ILC-lab/tree/main/lean): dedução natural em Lean 4:
+    - [`ND/Basic.lean`](https://github.com/psaccomani15/ILC-lab/blob/main/lean/ND/Basic.lean): as regras de dedução natural para lógica proposicional;
+    - [`ND/Exercicio.lean`](https://github.com/psaccomani15/ILC-lab/blob/main/lean/ND/Exercicio.lean): exercícios.
+
+- Materiais complementares:
+  - [API em C do cvc5](https://cvc5.github.io/docs/latest/api/c/c.html)
+  - [Exemplos em C do cvc5](https://github.com/cvc5/cvc5/tree/main/examples/api/c)
+  - [Lean 4](https://lean-lang.org/lean4/doc/quickstart.html)
+  - [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/) (livro gratuito)
+  - [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
+  - [Aplicações de SAT/SMT](https://smt.st/SAT_SMT_by_example.pdf)
+  - [Tutorial detalhado sobre SMT](https://hanielbarbosa.com/papers/fm2024.pdf)
+  - [Aprenda Lean com jogos](https://adam.math.hhu.de/)
+
 ## Resolução de problemas via SAT
 
 Podemos resolver problemas SAT automaticamente usando ferramentas de *automatização de raciocínio*. Um exemplo é o [cvc5](https://cvc5.github.io/), um solucionador SMT (de *satisfatibilidade módulo teorias*; falaremos um pouco mais sobre SMT em futuras aulas).
