@@ -8,8 +8,8 @@ title: Tópico 05 - Indução e Recursão
 14, 19, 21 Out
 : [**Indução matemática**]({{ site.baseurl }}{% link _lessons/05-induction/induction.md %})
   : [Slides]({{ site.baseurl }}{% link _lessons/05-induction/induction.pdf %})
-: [**Indução estrutural**]({{ site.baseurl }}{% link _lessons/05-induction/induction.md %})
-  : [Slides]({{ site.baseurl }}{% link _lessons/05-induction/induction.pdf %})
+: [**Indução estrutural**]({{ site.baseurl }}{% link _lessons/05-induction/recursion.md %})
+  : [Slides]({{ site.baseurl }}{% link _lessons/05-induction/recursion.pdf %})
 
 26 Out
 : Revisão
