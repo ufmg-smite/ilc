@@ -36,11 +36,4 @@ seo:
 
 {: .no_toc .mb-2 }
 
-### Lógica proposicional
-### Lógica de predicados
-### Demonstrações
-#### Regras de inferência
-#### Métodos de demonstração
-### Teoria dos conjuntos
-### Indução
-### Álgebra Booleana e circuitos lógicos
+
