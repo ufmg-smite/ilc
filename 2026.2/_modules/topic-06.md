@@ -14,7 +14,7 @@ title: Tópico 06 - Álgebra Booleana e Circuitos Lógicos
   : [Slides]({{ site.baseurl }}{% link _lessons/06-booleans/circuits.pdf %})
 
 16 Nov
-: [**Circuitos e SAT**]
+: Circuitos e SAT
 
 18 Nov
 : Revisão
